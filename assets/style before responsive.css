@@ -1,0 +1,614 @@
+/* fuentes de google 
+enlaces con normal y hover 
+identifica los contenidos con etiquetas semanticas de html 
+
+- adaptable. dos maquetaciones con punto de ruptura en 800px
+- flexible con limites en los 480 y 1600px */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* Si lo haces con link puedes poner que: <link href="..." media=screen and (min-width:xxxpx)>
+
+/* Variables
+--darkGrey: #171717;
+--middleGrey: #666666;
+--lightGrey: #979797;
+--selectedYellow:#fdec50;
+--blueButtons: #67a8ff;
+--perfectBlue: #2976ff;
+--ultraPink: #f6245c;
+
+/* Estructura general 
+
+
+
+
+/* Tamaño pequeño 
+@media screen and (min-width: 480px) and (max-width: 799px){
+  
+  
+}
+
+/* Tamaño mediano/grande 
+@media screen and (min-width: 800px){
+  
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0f0f0f;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+/* HEADER*/
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+}
+
+.navButton {
+  background: #67a8ff;
+  border-radius: 20px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 5px 15px;
+  margin: 0px 5px;
+  text-decoration: none;
+  line-height: 25px;
+  border-radius: 30px;
+}
+
+
+.header img{
+  max-width: 200px;
+}
+
+.header a:hover {
+  background-color: #fdec50;
+  color: black;
+}
+
+.header a.active {
+  background-color: white;
+  color: black;
+}
+
+.header-right {
+  margin: 10px 5px 0px 0px;
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+	float: none;
+	display: block;
+	text-align: left;
+  }
+  .header-right {
+	float: none;
+  }
+}
+
+#contenedor {
+  margin: auto;
+  width: 90%;
+  overflow: hidden;
+}
+
+.mitadHidden {
+  float: left;
+  width: 50%;
+  border-radius: 20px;
+  background: #101010;
+  text-align: center;
+background-position: bottom;
+background-repeat: no-repeat;
+background-size: 120%;
+}
+
+.mitadHidden img{
+  width: 100%;
+  border-radius: 20px;
+  visibility: hidden;
+}
+
+.cardText {
+  position: relative;
+  top: 40px;
+}
+
+.cardText h4{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.cardText h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.separador {
+  height: 30px;
+}
+
+.separadorPlus {
+  height: 60px;
+}
+
+#horizontalCard {
+  margin: auto;
+  overflow: hidden;
+  width: 90%;
+  height: 600px;
+  border-radius: 20px;
+  background: #101010;
+}
+
+.tercio2 img{
+  width: 100%;
+}
+
+.tercio1 {
+  vertical-align: center;
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+
+#tercio1Text {
+padding: 200px 100px 0px 40px;
+}
+
+#tercio1Text h1 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #666666;
+}
+
+#tercio1Text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#tercio1Text h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#tercio1Text p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.tercio2{
+  float: left;
+  width: 60%;
+}
+
+#divisor {
+  height: 20px;
+  border-bottom: 1px solid white;
+}
+
+#myVideo {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  min-width: 100%; 
+  filter: brightness(25%);
+}
+
+#videoContent {
+  width: 100%;
+  height: 1000px;
+}
+
+#contentText{
+  position: relative;
+  margin: auto;
+  width: 60%;
+  top: 700px;
+  text-align: center;
+}
+
+#contentText h6 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+#contentText h2 {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 100px;
+}
+#contentText h1 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+#button1{
+  font-size:  0.9rem;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  font-weight: 600;
+  margin: 5px;
+}
+
+#button2{
+  font-size: 0.9rem;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #2976ff;
+  color: white;
+  border: none;
+  font-weight: 600;
+  margin: 5px;
+}
+
+#footerLeft {
+  float: left;
+  padding: 20px;
+  font-size: 0.7rem;
+}
+
+#footerRight{
+  float: right;
+  padding: 20px;
+  font-size: 0.7rem;
+}
+
+#footerRight a{
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#footerRight a:hover {
+  text-decoration: underline;
+}
+
+ /* documentation */
+ #content1{
+   width: 60%;
+   margin: auto;
+   margin-top: 150px;
+   overflow: hidden;
+ }
+ .mitad {
+   float: left;
+   width: 50%;
+ }
+ 
+ .icon{
+   margin-top: 50px;
+   background: #f6245c;
+   height: 40px;
+   width: 40px;
+   border-radius: 5px;
+ }
+ .fas fa-tint {
+   color: white;
+   font-size: 1.5rem;
+ }
+ 
+ .iconContainer{
+   position: relative;
+   top: 11px;
+   left: 13px;
+ }
+ 
+ .content1Text {
+   margin-top: 30px;
+ }
+ 
+ .content1Text h1{
+   font-weight: 600;
+   font-size: 2.5rem;
+   line-height: 50px;
+ }
+ .content1Text p {
+   font-weight: 300;
+   font-size: 1.5rem;
+   color : #979797;
+   line-height: 30px;
+ }
+ 
+ #content2 {
+   width: 100%;
+   text-align: center;
+   margin-top: 150px;
+   
+ }
+ 
+ #content2 img{
+   margin-top: 130px;
+   width: 100%;
+ }
+ .contentText2{
+   width: 60%;
+   margin: auto;
+ }
+ 
+ .contentText2 h6{
+   font-weight: 300;
+    font-size: 1.2rem;
+    color : #979797;
+    line-height: 30px;
+ }
+ 
+ .contentText2 h1{
+    font-weight: 600;
+     font-size: 3rem;
+     line-height: 70px;
+  }
+  
+  .contentText2 p{
+     font-weight: 300;
+      font-size: 1.5rem;
+      color : #979797;
+      line-height: 30px;
+   }
+
+#content3{
+  width: 100%;
+  margin: auto;
+  margin-top: 200px;
+  display: block;
+  position: relative;
+}
+
+#videoContainer video{
+  width: 100%;
+  height: auto;
+  filter: brightness(70%);
+}
+
+#content3BlockText {
+  position: absolute;
+  top: 0; left: 0;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: left; 
+  width: 100%;
+  height: 100%;
+}
+
+#content3Text {
+  width: 30%;
+  margin: 60px;
+}
+
+#content3Text h6{
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #979797;
+  line-height: 70px;
+}
+
+#content3Text p{
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 1.5rem;
+}
+
+#content4{
+  width: 100%;
+  margin-top: 200px;
+}
+
+
+#content4 img{ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+#content4Text {
+  width: 40%;
+   margin: auto;
+   margin-top: 100px;
+   text-align: center;
+}
+
+#content4Text h6{
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #979797;
+  line-height: 30px;
+}
+
+#content4Text h1{
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 70px;
+}
+
+#content4Text p{
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 40px;
+  color: #979797;
+}
+
+#content5{
+  margin-top: 120px;
+  margin-bottom: 180px;
+}
+
+#wide {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+
+#download {
+  width: 50%;
+  margin: auto auto 100px auto;
+   text-align: center;
+}
+
+#download img{
+  width: 15%;
+}
+
+#downloadText {
+  margin: 20px;
+}
+
+#downloadText h1{
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 80px;
+}
+
+#downloadText p{
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 40px;
+  margin-bottom: 10px;
+  color: #979797;
+}
+
+#downloadText a{
+  text-decoration: none;
+  color: #67a8ff;
+}
+
+/* Terms and conditons */
+
+.terms {
+  width: 80%;
+  margin: auto auto 50px auto;
+  line-height: 25px;
+}
+
+.terms a{
+  text-decoration: none;
+  color: #67a8ff;
+}
+
+.terms a:hover{
+  text-decoration: underline;
+}
+
+.firstPart {
+  widht: 40%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.firstPart h1{
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 80px;
+  text-align: center;
+}
+
+.firstPart p{
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+}
+.secondPart h3 {
+  font-size: 2rem;
+  font-weight:400;
+  line-height: 80px;
+  text-decoration: underline;
+}
+
+.secondPart h5 {
+  font-size: 1.6rem;
+  font-weight:400;
+  line-height: 50px;
+  text-decoration: underline;
+}
+
+.secondPart p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.secondPart ol {
+  margin-left: 30px;
+}
+
+/* Sign Up */
+
+#introText {
+  width: 40%;
+  margin: 100px auto auto auto;
+  text-align: center;
+}
+
+#introText h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+#introText p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #979797;
+  line-height: 30px;
+}
+
+#prosignup input{
+  border-radius: 5px;
+  border: 1px solid #2976ff;
+  height: 35px;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #2976ff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+}
+
+#formBox {
+  width: 40%;
+  margin: 80px auto 100px auto;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+#formBox h1{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+#formBox label {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.halfBox {
+  display: inline-block;
+  margin: 0 auto 7px auto;
+  width: calc(50% - 5px);
+}
+
+
+#conditionsBox label{
+  font-size: 0.9rem;
+}

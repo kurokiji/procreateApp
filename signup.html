@@ -1,0 +1,134 @@
+<!-- cabecera con nombre del sitio y logo 
+navegacion principal
+acceso a login y registro 
+pie de pagina 
+ 
+ registro con: 
+ 	nombre
+	apellidos
+	edad
+	direccion completa
+	NIF
+	email 
+	telefono 
+	OBLIGATORIOS 
+	
+	aceptar condiciones, si no se marca, no se envia 
+	
+	enviar a mimail.php -->
+	
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<script src="https://kit.fontawesome.com/03474be937.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="assets/style.css">
+	</head>
+	<body>
+		
+		<div class="header">
+			  <img src="assets/logo.png" alt="Company Logo">
+			  <div class="header-right">
+				<a href="index.html">Home</a>
+				<a href="documentaton.html">Documentation</a>
+				<a href="#"><i class="fas fa-user-alt"></i>  Sign In</a>
+				<a class="active" href="signup.html.html"><i class="fas fa-user-plus"></i>  Sign Up</a>
+			  </div>
+			</div>
+			
+		<div id="introText">
+			<h1>Procreate Folio.</h1>
+			<p>Tell us a little about you! We value your security, and will never share or sell your private data. If you're curious about why we require certain information and how it's used, view our Privacy Policy.</p>
+		</div>
+		
+		<div id="formBox">
+			<form method="post" action="http://danieltorrestsapp1ma2021.alumnoscev.es/mi-mail.php" id="prosignup">
+				<h1>Personal Info</h1>
+				<div>
+				<div class="halfBox">
+				<label for="fname">First name:</label>
+				<input type="text" id="fname" name="fname" required>
+				 </div>
+				 <div class="halfBox">
+				 <label for="lname">Last name:</label>
+				 <input type="text" id="lname" name="lname" required>
+				 </div>
+				</div>
+				
+				<div>
+					<div class="halfBox">
+					<label for="age">Age:</label>
+					<input type="text" id="age" name="age" required>
+					 </div>
+					 <div class="halfBox">
+					 <label for="taxID">TAX Id:</label>
+					 <input type="text" id="taxID" name="taxID" required>
+					 </div>
+				</div>
+				
+				
+				<h1>Adress</h1>
+				<div>
+					<div class="halfBox">
+					<label for="street">Street:</label>
+					<input type="text" id="street" name="street" required>
+					 </div>
+					 <div class="halfBox">
+					 <label for="taxID">Number:</label>
+					 <input type="text" id="number" name="number" required>
+					 </div>
+				</div>
+				<div>
+					<div class="halfBox">
+					<label for="zipcode">Zip code:</label>
+					<input type="text" id="zipcode" name="zipcode" required>
+					 </div>
+					 <div class="halfBox">
+					 <label for="city">City</label>
+					 <input type="text" id="city" name="city" required>
+					 </div>
+				</div>
+			
+			
+			<h1>Contact info</h1>
+			<div>
+				<div class="halfBox">
+					<label for="fname">Phone Number:</label>
+					<input type="text" id="phone" name="phone" required>
+				</div>
+				<div class="halfBox">
+					<label for="fname">Email:</label>
+					<input type="text" id="mail" name="mail" required>
+				</div>
+			</div>
+			
+			<div id="conditionsBox">
+					<input type="checkbox" name="conditions" id="conditions" required/> I have read and agree to the <a href="/useterms.html">Terms & Conditions</a>
+			</div>
+			<div id="signUpButton">
+				  <button type="submit" class="signupbtn">Sign Up</button>
+				  <input type="hidden" name="destinatario" value="torres.daniel@me.com"/>
+				  <input type="hidden" name="redireccion" value="http://danieltorrestsapp1ma2021.alumnoscev.es/susFiles/suscripcion.html"/>
+			</div>
+			</form>
+		</div> 
+		
+		<div id="divisor">
+			</div>
+		<footer>
+			<div id="footerLeft"></id><p>Copyright 2019 Savage.</p>
+			</div>
+			<div id="footerRight">
+				<nav>
+					<a href="https://twitter.com/ProCreate"><i class="fab fa-twitter-square"></i> Twitter</a>
+					<a href="https://www.instagram.com/procreate/"><i class="fab fa-instagram-square"></i> Instagram</a>
+					<a href="https://www.facebook.com/procreate"/><i class="fab fa-facebook-square"></i> Facebook</a>
+					<a href="useterms.html"/><i class="far fa-file"></i> User Terms</a>
+					<a href="http://procreate.art"/><i class="fas fa-globe-europe"></i> Official Web</a>
+				</nav>
+			</div>
+		</footer>
+	</body>
+	</html>

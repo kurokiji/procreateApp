@@ -1,0 +1,1117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+/* Variables de color*/
+:root {
+   --darkGrey: #171717;
+   --middleGrey: #666666;
+   --lightGrey: #979797;
+   --selectedYellow:#fdec50;
+   --blueButtons: #67a8ff;
+   --perfectBlue: #2976ff;
+   --ultraPink: #f6245c;
+}
+
+/* ESTRUCTURA GENERAL */
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #0f0f0f;
+   font-family: 'Montserrat', sans-serif;
+   color: white;
+}
+
+/* HEADER*/
+.header {
+   overflow: hidden;
+   padding: 20px 10px;
+}
+
+.navButton {
+   background: var(--perfectBlue);
+   border-radius: 20px;
+}
+
+.header a {
+   float: left;
+   color: white;
+   text-align: center;
+   font-weight: 300;
+   font-size: 1rem;
+   padding: 5px 15px;
+   margin: 0px 5px;
+   text-decoration: none;
+   line-height: 25px;
+   border-radius: 30px;
+}
+
+.header img{
+   max-width: 200px;
+}
+
+.header a:hover {
+   background-color: var(--selectedYellow);
+   color: black;
+}
+
+.header a.active {
+   background-color: white;
+   color: black;
+}
+
+.header-right {
+   margin: 10px 5px 0px 0px;
+   float: right;
+}
+
+/* FOOTER*/
+#divisor {
+   height: 1px;
+   border-bottom: 1px solid white;
+}
+
+/* TERMS ANDS CONDITIONS */
+.terms {
+   width: 80%;
+   margin: auto auto 50px auto;
+   line-height: 25px;
+}
+
+.terms a{
+   text-decoration: none;
+   color: var(--blueButtons);
+}
+
+.terms a:hover{
+   text-decoration: underline;
+}
+
+.firstPart {
+   widht: 40%;
+   margin-top: 100px;
+   margin-bottom: 50px;
+}
+
+.secondPart ol {
+   margin-left: 30px;
+}
+
+/* TAMAÑO PEQUEÑO */
+@media screen and (max-width: 799px){
+   body {min-width: 480px;}
+   
+   /*HEADER*/
+   .header a {
+      float: none;
+      display: block;
+      text-align: center;
+      max-width: 50vw;
+      margin: auto;
+   }
+   .header-right {
+      float: none;
+   }
+   
+   /* PORTADA */
+       /* VIDEO */
+       #myVideo {
+          position: absolute;
+          z-index: -1;
+          right: 0;
+          top: 0;
+          min-width: 100%;
+          max-width: 1600px; 
+          filter: brightness(25%);
+       }
+       
+       #videoContent {
+          width: 100%;
+          height: 700px;
+       }
+       
+       /* INTRO INFO*/
+       #contentText{
+          position: relative;
+          margin: auto;
+          width: 60%;
+          max-width: 800px;
+          top: 20vh;
+          text-align: center;
+       }
+       
+       #contentText h6 {
+          font-weight: 400;
+          font-size: 1rem;
+       }
+       
+       #contentText h2 {
+          font-weight: 600;
+          font-size: 2.5rem;
+       }
+       #contentText h1 {
+          font-weight: 300;
+          font-size: 1.5rem;
+       }
+       
+       #button1{
+          font-size:  0.7rem;
+          border-radius: 20px;
+          padding: 10px 20px;
+          background-color: white;
+          border: none;
+          font-weight: 600;
+          margin: 5px;
+       }
+       
+       #button2{
+          font-size: 0.7rem;
+          border-radius: 20px;
+          padding: 10px 20px;
+          background-color: var(--perfectBlue);
+          color: white;
+          border: none;
+          font-weight: 600;
+          margin: 5px;
+       }
+       
+       /* DOS TARJETAS */
+       #contenedor {
+          margin: 10px auto 0px auto;
+          width: 95%;
+       }
+       
+       .mitadHidden {
+          width: calc(100% - 32px);
+          margin: 0 auto 32px auto;
+          border-radius: 20px;
+          background: var(--darkGrey);
+          text-align: center;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          background-size: 120%;
+       }
+       
+       .mitadHidden img{
+          width: 100%;
+          border-radius: 20px;
+          visibility: hidden;
+       }
+       
+       .cardText {
+          position: relative;
+          top: 40px;
+       }
+       
+       .cardText h4{
+          font-size: 0.9rem;
+          font-weight: 400;
+       }
+       
+       .cardText h3{
+          font-size: 1.3rem;
+          font-weight: 600;
+       }
+       
+       /* HORIZONTAL CARD */
+       #horizontalCardMobile {
+          background-size: 100% !important;
+       }
+       
+       #horizontalCard {
+          display: none;
+       }
+       
+   /* DOCUMENTATION */
+       /* PRIMERA PARTE */
+        #content1 {
+          width: 100%;
+          text-align: center;
+          margin-top: 150px;
+        }
+        
+        #content1 img{
+          margin-top: 50px;
+          width: 100%;
+        }
+        .content1Text{
+          width: 60%;
+          margin: auto;
+        }
+        
+        .content1Text h6{
+          font-weight: 300;
+          font-size: 1rem;
+          color : var(--lightGrey);
+          line-height: 30px;
+        }
+        
+        .content1Text h1{
+          font-weight: 600;
+          font-size: 2.7rem;
+          line-height: 55px;
+        }
+        
+        .content1Text p{
+          font-weight: 300;
+          font-size: 1.2rem;
+          color : var(--lightGrey);
+          line-height: 30px;
+        }
+        
+        /* ICONOS */
+        .icon{
+          margin-top: 50px;
+          background: var(--ultraPink);
+          height: 30px;
+          width: 30px;
+          border-radius: 5px;
+        }
+        .fas fa-tint {
+          color: white;
+          font-size: 1.1rem;
+        }
+        
+        .iconContainer{
+          position: relative;
+          top: 7px;
+          left: 9px;
+        }
+        
+        /* SEGUNDA PARTE */
+        .content2Text {
+          margin-top: 20px;
+        }
+        
+        .content2Text h1{
+          font-weight: 600;
+          font-size: 2.2rem;
+          line-height: 50px;
+        }
+        .content2Text p {
+          font-weight: 300;
+          font-size: 1.2rem;
+          color : var(--lightGrey);
+          line-height: 30px;
+        }
+        
+        #content2Right {
+          max-width: 60%;
+          margin: 100px auto auto auto;
+        }
+        #content2Left {
+          display: none;
+        }
+        
+        /* TERCERA PARTE */
+        #content3{
+          width: 100%;
+          margin: auto;
+          margin-top: 110px;
+          display: block;
+          position: relative;
+        }
+        
+        #videoContainer video{
+          width: 100%;
+          height: auto;
+          filter: brightness(70%);
+        }
+        
+        #content3BlockText {
+          position: absolute;
+          top: 0; left: 0;
+          display: flex;
+          flex-direction: column; 
+          justify-content: center;
+          align-items: left; 
+          width: 100%;
+          height: 100%;
+        }
+        
+        #content3Text {
+          width: 80%;
+          margin: 60px;
+        }
+        
+        #content3Text h6{
+          font-weight: 300;
+          font-size: 1.1rem;
+          color: var(--lightGrey);
+          line-height: 50px;
+        }
+        
+        #content3Text p{
+          font-weight: 400;
+          line-height: 30px;
+          font-size: 1.2rem;
+          line-height: 25px;
+        }
+        
+        /* CUARTA PARTE */
+        #content4{
+          width: 100%;
+          margin-top: 110px;
+        }
+        
+        #content4 img{ 
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 90%;
+        }
+        
+        #content4Text {
+          width: 60%;
+          margin: auto;
+          margin-top: 50px;
+          text-align: center;
+        }
+        
+        #content4Text h6{
+          font-weight: 300;
+          font-size: 1rem;
+          color: var(--lightGrey);
+          line-height: 30px;
+        }
+        
+        #content4Text h1{
+          font-weight: 600;
+          font-size: 2.7rem;
+          line-height: 55px;
+        }
+        
+        #content4Text p{
+          font-weight: 400;
+          font-size: 1.2rem;
+          line-height: 30px;
+          color: var(--lightGrey);
+        }
+        
+        /* QUINTA PARTE */
+        #content5{
+          margin-top: 50px;
+          margin-bottom: 80px;
+        }
+        
+        #wide {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+        }
+        
+        
+        /* DESCARGA */
+        #download {
+          width: 60%;
+          margin: auto;
+          text-align: center;
+        }
+        
+        #download img{
+          width: 20%;
+        }
+        
+        #downloadText {
+          margin: 20px;
+        }
+        
+        #downloadText h1{
+          font-weight: 400;
+          font-size: 3.5rem;
+          line-height: 60px;
+        }
+        
+        #downloadText p{
+          font-weight: 300;
+          font-size: 1.2rem;
+          line-height: 30px;
+          margin-bottom: 10px;
+          color: var(--lightGrey);
+        }
+        
+        #downloadText a{
+          text-decoration: none;
+          color: var(--perfectBlue);
+        }
+
+   /* SIGN UP */
+       #introText {
+          width: 60%;
+          margin: 100px auto auto auto;
+          text-align: center;
+       }
+       
+       #introText h1 {
+          font-size: 2.5rem;
+          font-weight: 400;
+          line-height: 50px;
+       }
+       
+       #introText p {
+          font-size: 1.1rem;
+          font-weight: 300;
+          color: var(--lightGrey);
+          line-height: 30px;
+       }
+       
+       #formBox {
+          width: 80%;
+          margin: 80px auto 100px auto;
+          border: 1px solid white;
+          padding: 20px;
+          border-radius: 16px;
+          overflow: hidden;
+       }
+       
+       #prosignup input[type=text]{
+          border-radius: 5px;
+          border: 1px solid var(--perfectBlue);
+          height: 35px;
+          width: 100%;
+          font-size: 1rem;
+          color: var(--perfectBlue);
+          font-family: 'Montserrat', sans-serif;
+          padding: 5px;
+       }
+       
+       #formBox h1{
+          font-size: 1.3rem;
+          font-weight: 400;
+          margin-top: 30px;
+       }
+       
+       #formBox label {
+          font-size: 1rem;
+          font-weight: 300;
+          line-height: 35px;
+       }
+       
+       .halfBox {
+          display: inline-block;
+          margin: 0 auto 7px auto;
+          width: calc(50% - 5px);
+       }
+       #conditionsBox{
+          font-size: 0.9rem;
+          display: inline-block;
+          margin: 0 auto 7px auto;
+          width: calc(70% - 5px);
+       }
+       
+       #signUpButton {
+          display: inline-block;
+          margin: 0 auto 7px auto;
+          width: calc(30% - 5px);
+       }
+       
+       #signUpButton button{
+          font-size:  0.8rem;
+          border-radius: 20px;
+          padding: 10px 15px;
+          background-color: white;
+          border: none;
+          font-weight: 600;
+          margin: 5px;
+       }
+   
+   /*TERMS AND CONDITIONS*/
+       .firstPart h1{
+          font-size: 3rem;
+          font-weight: 400;
+          line-height: 60px;
+          text-align: center;
+       }
+       
+       .firstPart p{
+          font-size: 1.1rem;
+          font-weight: 300;
+          text-align: center;
+       }
+       .secondPart h3 {
+          font-size: 1.5rem;
+          font-weight:400;
+          line-height: 40px;
+          text-decoration: underline;
+       }
+       
+       .secondPart h5 {
+          font-size: 1.2rem;
+          font-weight:400;
+          line-height: 40px;
+          text-decoration: underline;
+       }
+       
+       .secondPart p {
+          font-size: 1rem;
+          font-weight: 300;
+       }
+       
+   /* FOOTER */
+      #footerLeft {
+         padding: 30px 40px 0px 40px;
+         font-size: 0.7rem;
+         text-align: center;
+      }
+      
+      #footerRight{
+         padding: 20px;
+         font-size: 0.7rem;
+         text-align:center;
+      }
+      
+      #footerRight a{
+         color: white;
+         text-decoration: none;
+         margin: 0 7px;
+      }
+      
+      #footerRight a:hover {
+         text-decoration: underline;
+      }
+}
+
+/*FIN PEQUENO*/
+
+/* Tamaño mediano/grande */
+@media screen and (min-width: 800px){
+   
+   body {
+      max-width: 1600px;
+      width: 100%;
+      margin: auto;
+   }
+   /* PORTADA */
+       /* VIDEO */
+       #myVideo {
+          position: absolute;
+          z-index: -1;
+          right: 0;
+          top: 0;
+          min-width: 100%; 
+          filter: brightness(25%);
+       }
+       
+       #videoContent {
+          width: 100%;
+          height: 1000px;
+       }
+       
+       /* INTRO INFO*/
+       #contentText{
+          position: relative;
+          margin: auto;
+          width: 60%;
+          max-width: 800px;
+          top: 35vh;
+          text-align: center;
+       }
+       
+       #contentText h6 {
+          font-weight: 400;
+          font-size: 1.2rem;
+       }
+       
+       #contentText h2 {
+          font-weight: 600;
+          font-size: 3.5rem;
+       }
+       #contentText h1 {
+          font-weight: 300;
+          font-size: 2rem;
+       }
+       
+       #button1{
+          font-size:  0.9rem;
+          border-radius: 20px;
+          padding: 10px 20px;
+          background-color: white;
+          border: none;
+          font-weight: 600;
+          margin: 5px;
+       }
+       
+       #button2{
+          font-size: 0.9rem;
+          border-radius: 20px;
+          padding: 10px 20px;
+          background-color: var(--perfectBlue);
+          color: white;
+          border: none;
+          font-weight: 600;
+          margin: 5px;
+       }
+       
+       /* DOBLE TARJETA */
+       #contenedor {
+          margin: 32px auto 0px auto;
+          width: 95%;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+       }
+       
+       .mitadHidden {
+          float: left;
+          width: calc(50% - 32px);
+          margin: 0 auto 0 auto;
+          border-radius: 20px;
+          background: var(--darkGrey);
+          text-align: center;
+          background-position: bottom;
+          background-repeat: no-repeat;
+          background-size: 120%;
+       }
+       
+       .mitadHidden img{
+          width: 100%;
+          border-radius: 20px;
+          visibility: hidden;
+       }
+       
+       .cardText {
+          position: relative;
+          top: 40px;
+       }
+       
+       .cardText h4{
+          font-size: 0.9rem;
+          font-weight: 400;
+       }
+       
+       .cardText h3{
+          font-size: 1.5rem;
+          font-weight: 600;
+       }
+       
+       /* TARJETA HORIZONTAL */
+      #horizontalCardMobile {
+          display: none;
+      }
+      #horizontalCard {
+          margin: 32px auto 32px auto;
+          overflow: hidden;
+          width: calc(95% - 32px);
+          max-height: 600px;
+          min-height: 400px;
+          border-radius: 20px;
+          background: var(--darkGrey);
+      }
+       
+      .tercio1 {
+          float: left;
+          width: 40%;
+          text-align: left;
+          padding: 20% 10px 0px 40px;
+      }
+       
+      #tercio1Text h1 {
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: var(--middleGrey);
+      }
+       
+      #tercio1Text h2 {
+          font-size: 2rem;
+          font-weight: 600;
+      }
+       
+      #tercio1Text h3 {
+          font-size: 1rem;
+          font-weight: 400;
+      }
+       
+      #tercio1Text p {
+          font-size: 1rem;
+          font-weight: 300;
+      }
+       
+      .tercio2{
+          float: left;
+          width: 60%;
+       }
+        
+      .tercio2 img{
+         width: 100%;
+         margin-top: 20px;
+      }
+
+       
+   /* DOCUMENTATION */
+   
+       /* PARTE UNO*/
+       #content1 {
+          width: 100%;
+          text-align: center;
+          margin-top: 150px;
+       }
+       
+       #content1 img{
+          margin-top: 130px;
+          width: 100%;
+       }
+       .content1Text{
+          width: 60%;
+          margin: auto;
+       }
+       
+       .content1Text h6{
+          font-weight: 300;
+          font-size: 1.2rem;
+          color : var(--lightGrey);
+          line-height: 30px;
+       }
+       
+       .content1Text h1{
+          font-weight: 600;
+          font-size: 3rem;
+          line-height: 70px;
+       }
+       
+       .content1Text p{
+          font-weight: 300;
+          font-size: 1.5rem;
+          color : var(--lightGrey);
+          line-height: 30px;
+       }
+   
+       /* PARTE DOS */
+       #content2{
+          width: 70%;
+          margin: auto;
+          margin-top: 150px;
+          overflow: hidden;
+       }
+       #content2Left {
+          float: left;
+          width: 40%;
+       }
+       
+       #content2Right {
+          float: left;
+          margin-top: 7vw;
+          width: 60%;
+       }
+       
+       #content2Left img{
+          width: 100%;
+       }
+       
+       .content2Text {
+         max-width: 60%;
+      }
+      
+      .content2Text h1{
+         font-weight: 600;
+         font-size: 2.5rem;
+         line-height: 50px;
+      }
+      .content2Text p {
+         font-weight: 300;
+         font-size: 1.3rem;
+         color : var(--lightGrey);
+         line-height: 30px;
+      }
+  
+       /* ICONOS */
+       .icon{
+          margin-top: 50px;
+          background: var(--ultraPink);
+          height: 40px;
+          width: 40px;
+          border-radius: 5px;
+       }
+       .fas fa-tint {
+          color: white;
+          font-size: 1.5rem;
+       }
+       
+       .iconContainer{
+          position: relative;
+          top: 11px;
+          left: 13px;
+       }
+   
+       /* PARTE TRES */
+       #content3{
+          width: 100%;
+          margin: auto;
+          margin-top: 200px;
+          display: block;
+          position: relative;
+       }
+       
+       #videoContainer video{
+          width: 100%;
+          height: auto;
+          filter: brightness(70%);
+       }
+       
+       #content3BlockText {
+          position: absolute;
+          top: 0; left: 0;
+          display: flex;
+          flex-direction: column; 
+          justify-content: center;
+          align-items: left; 
+          width: 100%;
+          height: 100%;
+       }
+       
+       #content3Text {
+          width: 35%;
+          margin: 60px;
+       }
+       
+       #content3Text h6{
+          font-weight: 300;
+          font-size: 1.3rem;
+          color: var(--lightGrey);
+          line-height: 70px;
+       }
+       
+       #content3Text p{
+          font-weight: 400;
+          line-height: 30px;
+          font-size: 1.5rem;
+       }
+   
+       /* PARTE 4 */
+       #content4{
+          width: 100%;
+          margin-top: 200px;
+       }
+       
+       #content4 img{ 
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 90%;
+       }
+       
+       #content4Text {
+          width: 40%;
+          margin: auto;
+          margin-top: 100px;
+          text-align: center;
+       }
+       
+       #content4Text h6{
+          font-weight: 300;
+          font-size: 1.1rem;
+          color: var(--lightGrey);
+          line-height: 30px;
+       }
+       
+       #content4Text h1{
+          font-weight: 600;
+          font-size: 3rem;
+          line-height: 70px;
+       }
+       
+       #content4Text p{
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 40px;
+          color: var(--lightGrey);
+       }
+   
+       /* PARTE CINCO */
+       #content5{
+          margin-top: 120px;
+          margin-bottom: 100px;
+       }
+       
+       #wide {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+       }
+   
+       /* DESCARGA */
+       #download {
+          width: 50%;
+          margin: auto auto 100px auto;
+          text-align: center;
+       }
+       
+       #download img{
+          width: 15%;
+       }
+       
+       #downloadText {
+          margin: 20px;
+       }
+       
+       #downloadText h1{
+          font-weight: 400;
+          font-size: 3.5rem;
+          line-height: 80px;
+       }
+       
+       #downloadText p{
+          font-weight: 300;
+          font-size: 1.2rem;
+          line-height: 40px;
+          margin-bottom: 10px;
+          color: var(--lightGrey);
+       }
+       
+       #downloadText a{
+          text-decoration: none;
+          color: var(--blueButtons);
+       }
+       
+       #downloadText a:hover{
+          text-decoration: underline;
+       }
+   
+   /* SIGN UP */
+       #introText {
+          width: 40%;
+          margin: 100px auto auto auto;
+          text-align: center;
+       }
+       
+       #introText h1 {
+          font-size: 3.5rem;
+          font-weight: 400;
+          line-height: 70px;
+       }
+       
+       #introText p {
+          font-size: 1.3rem;
+          font-weight: 300;
+          color: var(--lightGrey);
+          line-height: 30px;
+       }
+       
+       #formBox {
+          width: 60%;
+          margin: 80px auto 100px auto;
+          border: 1px solid white;
+          padding: 20px;
+          border-radius: 16px;
+          overflow: hidden;
+       }
+       
+       #formBox h1{
+          font-size: 2rem;
+          font-weight: 400;
+          margin-top: 30px;
+       }
+       
+       #formBox label {
+          font-size: 1.3rem;
+          font-weight: 300;
+          line-height: 35px;
+       }
+       
+       #prosignup input[type=text]{
+         border-radius: 5px;
+         border: 1px solid var(--perfectBlue);
+         height: 35px;
+         width: 100%;
+         font-size: 1.2rem;
+         color: var(--perfectBlue);
+         font-family: 'Montserrat', sans-serif;
+         padding: 5px;
+      }
+       
+       .halfBox {
+          display: inline-block;
+          margin: 0 auto 7px auto;
+          width: calc(50% - 5px);
+       }
+       
+       #conditionsBox label{
+          font-size: 0.9rem;
+       }
+       
+       #conditionsBox {
+          margin-top: 20px;
+          float: left;
+       }
+       
+       #signUpButton {
+          float: right;
+          margin-top: 10px;
+       }
+       
+       #signUpButton button{
+          font-size:  0.9rem;
+          border-radius: 20px;
+          padding: 10px 20px;
+          background-color: white;
+          border: none;
+          font-weight: 600;
+          margin: 5px;
+       }
+   
+   /*TERMS AND CONDITIONS*/
+       .firstPart h1{
+          font-size: 4rem;
+          font-weight: 400;
+          line-height: 80px;
+          text-align: center;
+       }
+       
+       .firstPart p{
+          font-size: 1.3rem;
+          font-weight: 300;
+          text-align: center;
+       }
+       
+       .secondPart h3 {
+          font-size: 2rem;
+          font-weight:400;
+          line-height: 80px;
+          text-decoration: underline;
+       }
+       
+       .secondPart h5 {
+          font-size: 1.6rem;
+          font-weight:400;
+          line-height: 50px;
+          text-decoration: underline;
+       }
+       
+       .secondPart p {
+          font-size: 1.2rem;
+          font-weight: 300;
+       }
+       
+   /* FOOTER */
+       footer {
+          line-height: 15px;
+       }
+       #footerLeft {
+          float: left;
+          padding: 20px;
+          font-size: 0.7rem;
+          max-width:  30%;
+       }
+       
+       #footerRight{
+          float: right;
+          padding: 20px;
+          font-size: 0.7rem;
+          max-width: 70%;
+          text-align:center;
+       }
+       
+       #footerRight a{
+          color: white;
+          text-decoration: none;
+          margin: 0 10px;
+       }
+       
+       #footerRight a:hover {
+          text-decoration: underline;
+       }
+   /* FIN GRANDE*/
+}
